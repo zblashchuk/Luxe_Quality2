@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Sep 18 00:11:37 EEST 2022","Sun Sep 18 00:11:38 EEST 2022","1777","","homepage redmine.org","","homepage redmine.org","should have title ""Overview - Redmine""","should have title ""Overview - Redmine""",""
+"passed","Sun Sep 18 00:11:47 EEST 2022","Sun Sep 18 00:11:49 EEST 2022","2116","","homepage redmine.org","","homepage redmine.org","should search topics by search feild","should search topics by search feild",""
+"passed","Fri Sep 16 23:04:08 EEST 2022","Fri Sep 16 23:04:11 EEST 2022","2914","","My Login application","","My Login application","should login with valid credentials","should login with valid credentials",""
+"passed","Sun Sep 18 00:11:49 EEST 2022","Sun Sep 18 00:11:51 EEST 2022","1743","","homepage redmine.org","","homepage redmine.org","should have clickable all menu items","should have clickable all menu items",""
+"passed","Sun Sep 18 00:11:41 EEST 2022","Sun Sep 18 00:11:47 EEST 2022","5394","","homepage redmine.org","","homepage redmine.org","should Registration be filled required field with valid data","should Registration be filled required field with valid data",""
+"passed","Sun Sep 18 00:11:38 EEST 2022","Sun Sep 18 00:11:41 EEST 2022","2983","","homepage redmine.org","","homepage redmine.org","should go to Registration page after click on register link on top-menu","should go to Registration page after click on register link on top-menu",""
