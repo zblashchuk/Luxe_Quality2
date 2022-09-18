@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 push:
 branches:
-- 'main' # (main branch) Set branch of the GH repo to push      
+- 'master' # (main branch) Set branch of the GH repo to push      
 jobs:
 test_suite: # Name of the job
 runs-on: ubuntu-20.04 # Choosing OS
