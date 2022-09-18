@@ -1,8 +1,9 @@
 name: Main Github Actions
 on:
+  workflow_dispatch:
 push:
 branches:
-- 'master' # Set branch of the GH repo to push
+- 'main' # (main branch) Set branch of the GH repo to push      
 jobs:
 test_suite: # Name of the job
 runs-on: ubuntu-20.04 # Choosing OS
@@ -10,7 +11,7 @@ steps:
 - uses: actions/checkout@v2
 - uses: actions/setup-node@v2
 with:
-node-version: '12'; # In command line run “node -v” and choose your
+node-version: '17.9.0'; # In command line run “node -v” and choose your
 version
 - run: npm ci
 # - run: npm config set script-shell &quot;C:\Program Files\Git\bin\bash.exe&quot;
@@ -39,18 +40,5 @@ path: allure-report
 uses: JamesIves/github-pages-deploy-action@4.1.4
 if: always()
 with:
-branch: master # The branch the action should deploy to.
+branch: gh-pages # The branch the action should deploy to.
 folder: allure-report # The folder the action should deploy.
-target-folder: docs
-- name: Pushes docs to another repository
-uses: cpina/github-action-push-to-another-repository@v1.3
-if: always()
-env:
-API_TOKEN_GITHUB: ${{ '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' }} # Instruction where to get token
-is below
-with:
-source-directory: 'docs';
-destination-github-username: 'zblashchuk' # Your username
-destination-repository-name: 'alluretest1' # Name of your repo
-user-email: zblashchuk@gmail.com # Your email
-target-branch: main
